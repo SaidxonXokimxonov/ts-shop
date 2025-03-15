@@ -1,3 +1,5 @@
+import { temp, index, malumotlar, updateProductDetails } from './index';
+
 export const state = {
   products: [
     {
