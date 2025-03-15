@@ -4,11 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../build/index.css" />
-    <title>Quiz app v2</title>
+    <title>Ts-shop</title>
 
     <script type="module" src="../build/index.js" defer></script>
   </head>
   <body>
-    
+    <div class="px-10 bg-[#2A2A72] py-6 flex justify-between items-center">
+      <a class="text-white text-[30px]" href="#">Product</a>
+      <p class="text-[30px] text-white font-semibold">Welcome</p>
+      <a class="flex items-center gap-2 text-[#009FF4] px-4 py-2 rounded-[6px] border-2 border-[#009FF4] active:scale-95 hover:bg-[#009FF4] hover:border-[#2A2A72] hover:text-[#2A2A72] transition-all duration-500 ease-in-out" href="#"><img class="w-[24px] h-[24px]" src="/images/icons8-cart-48.png" alt=""> <button>MY CART</button></a>
+    </div>
+    <div class="container mx-auto p-[60px]">
+      <h1 class="text-center text-[40px] my-6 font-semibold text-[#2A2A72]">Our Products</h1>
+      <div class="grid grid-cols-4 gap-6">
+        <!-- 1-cart -->
+        <div class="flex flex-col border border-gray-200 rounded-[16px]">
+          <a class="border-b border-gray-200" href="#">
+            <img class="w-full transition-all duration-500 ease-in-out transform hover:scale-110" src="/images/phone1.png" alt="">
+          </a>
+          <div class="p-5 pb-5 flex justify-between items-center bg-[#2A2A72] rounded-b-[16px]">
+            <p class="text-[20px] font-medium text-white">Iphone 15Pro Max</p>
+            <p class="text-[30px] font-semibold text-white">$ 920</p>
+          </div>
+        </div>
+        <!-- 2-cart -->
+        <div class="flex flex-col border border-gray-200 rounded-[16px]">
+          <a class="border-b border-gray-200" href="#">
+            <img class="w-full transition-all duration-500 ease-in-out transform hover:scale-110" src="/images/phone2.png" alt="">
+          </a>
+          <div class="p-5 pb-5 flex justify-between items-center bg-[#2A2A72] border-#2A2A72 rounded-b-[16px]">
+            <p class="text-[20px] font-medium text-white">Iphone 16 Pro</p>
+            <p class="text-[30px] font-semibold text-white">$ 770</p>
+          </div>
+        </div>
+        <!-- 3-cart -->
+        <div class="flex flex-col border border-gray-200 rounded-[16px]">
+          <a class="border-b border-gray-200" href="#">
+            <img class="w-full transition-all duration-500 ease-in-out transform hover:scale-110" src="/images/phone3.png" alt="">
+          </a>
+          <div class="p-5 pb-5 flex justify-between items-center bg-[#2A2A72] rounded-b-[16px]">
+            <p class="text-[20px] font-medium text-white">Iphone 16</p>
+            <p class="text-[30px] font-semibold text-white">$ 880</p>
+          </div>
+        </div>
+        <!-- 4-cart  -->
+        <div class="flex flex-col border border-gray-200 rounded-[16px]">
+          <a class="border-b border-gray-200" href="#">
+            <img class="w-full transition-all duration-500 ease-in-out transform hover:scale-110" src="/images/phone4.png" alt="">
+          </a>
+          <div class="p-5 pb-5 flex justify-between items-center bg-[#2A2A72] rounded-b-[16px]">
+            <p class="text-[20px] font-medium text-white">Iphone 14</p>
+            <p class="text-[30px] font-semibold text-white">$ 520</p>
+          </div>
+        </div>
+        <!-- 5-cart -->
+        <div class="flex flex-col border border-gray-200 rounded-[16px]">
+          <a class="border-b border-gray-200" href="#">
+            <img class="w-full transition-all duration-500 ease-in-out transform hover:scale-110" src="/images/phone3.png" alt="">
+          </a>
+          <div class="p-5 pb-5 flex justify-between items-center bg-[#2A2A72] rounded-b-[16px]">
+            <p class="text-[20px] font-medium text-white">Iphone 16</p>
+            <p class="text-[30px] font-semibold text-white">$ 880</p>
+          </div>
+        </div>
+        <!-- 6-cart -->
+        <div class="flex flex-col border border-gray-200 rounded-[16px]">
+          <a class="border-b border-gray-200" href="#">
+            <img class="w-full transition-all duration-500 ease-in-out transform hover:scale-110" src="/images/phone4.png" alt="">
+          </a>
+          <div class="p-5 pb-5 flex justify-between items-center bg-[#2A2A72] rounded-b-[16px]">
+            <p class="text-[20px] font-medium text-white">Iphone 14</p>
+            <p class="text-[30px] font-semibold text-white">$ 520</p>
+          </div>
+        </div>
+        <!-- 7-cart -->
+        <div class="flex flex-col border border-gray-200 rounded-[16px]">
+          <a class="border-b border-gray-200" href="#">
+            <img class="w-full transition-all duration-500 ease-in-out transform hover:scale-110" src="/images/phone2.png" alt="">
+          </a>
+          <div class="p-5 pb-5 flex justify-between items-center bg-[#2A2A72] rounded-b-[16px]">
+            <p class="text-[20px] font-medium text-white">Iphone 16 Pro</p>
+            <p class="text-[30px] font-semibold text-white">$ 770</p>
+          </div>
+        </div>
+        <!-- 8-cart -->
+        <div class="flex flex-col border border-gray-200 rounded-[16px]">
+          <a class="border-b border-gray-200" href="#">
+            <img class="w-full transition-all duration-500 ease-in-out transform hover:scale-110" src="/images/phone1.png" alt="">
+          </a>
+          <div class="p-5 pb-5 flex justify-between items-center bg-[#2A2A72] rounded-b-[16px]">
+            <p class="text-[20px] font-medium text-white">Iphone 15Pro Max</p>
+            <p class="text-[30px] font-semibold text-white">$ 920</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
