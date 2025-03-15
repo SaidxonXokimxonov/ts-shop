@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../build/index.css" />
+    <title>Quiz app v2</title>
+
+    <script type="module" src="../build/index.js" defer></script>
+  </head>
+  <body class="grid h-screen place-items-center bg-[#343D3F]">
+    <div class="flex size-[436px] flex-col overflow-hidden rounded-sm border">
+      <div class="flex h-max w-[100%] items-center justify-between bg-[#2B2B2B] p-3 p-5" id="question">
+        <span class="grid size-20 place-items-center border text-2xl font-bold text-white" id="number1"></span>
+        <span class="grid size-16 place-items-center border text-xl font-bold text-white" id="operation"></span>
+        <span class="grid size-20 place-items-center border text-2xl font-bold text-white" id="number2"></span>
+      </div>
+      <div class="grid w-[100%] flex-1 grid-cols-2 place-items-center bg-[#2B2B2B]" id="answers">
+        <button class="size-16 bg-blue-400 p-2 font-bold text-white transition-all active:scale-95 btnAnswer"></button>
+        <button class="size-16 bg-blue-400 p-2 font-bold text-white transition-all active:scale-95 btnAnswer"></button>
+        <button class="size-16 bg-blue-400 p-2 font-bold text-white transition-all active:scale-95 btnAnswer"></button>
+        <button class="size-16 bg-blue-400 p-2 font-bold text-white transition-all active:scale-95 btnAnswer"></button>
+      </div>
+      <div class="mt-4 flex w-full gap-1 h-10" id="indicator"></div>
+    </div>
+    <div class="absolute right-10 p-3 top-10 h-[100px] w-[200px] border">
+      <div class="text-2xl flex text-white">
+        <h1>Question</h1>
+        <span id="questionBox" class="ml-2"></span>
+      </div>
+      <div class="text-2xl flex text-white">
+        <h1>Time:</h1>
+        <span id="time" class="ml-2"></span>
+      </div>
+      
+    </div>
+  </body>
+</html>
