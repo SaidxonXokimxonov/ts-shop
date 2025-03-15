@@ -1,12 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./../build/index.css">
-</head>
-<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./../build/index.css" />
+  </head>
+  <body class="bg-gray-100 h-auto">
+    <!-- Header -->
+    <header
+      class="bg-blue-900 text-white p-4 flex justify-between items-center"
+    >
+      <h1 class="text-xl font-bold">PRODUCTS</h1>
+      <button
+        id="cartButton"
+        class="px-4 py-2 rounded border border-blue-400 flex items-center gap-2 hover:bg-blue-600 active:bg-blue-800 transition"
+      >
+        <span class="text-blue-400">🛒 MY CART</span>
+      </button>
+    </header>
+
+    <!-- Product Details-->
+    <div
+      id="product-container"
+      class="mt-8 mx-auto p-8 flex flex-col items-center max-w-4xl"
+    >
+      <h2 id="product-name" class="text-2xl font-semibold text-center mb-4">
+        Samsung S7
+      </h2>
+
+      <div class="w-[908px] h-auto flex flex-col md:flex-row items-center gap-8 md:gap-16">
+        <!-- Product Image -->
+        <div
+          id="product-image"
+          class="w-auto h-80 bg-gray-300 rounded-lg overflow-hidden"
+        >
+          <img
+            id="product-img"
+            src="https://samsung-shops.ru/image/cache/samsung_shops/catalog/add%20samsung/Galaxy%20S/s7edge/s7edge-silver.jpg_300_samsung_shops.webp"
+            alt="Samsung S7"
+            class="object-cover w-full h-full"
+          />
+        </div>
+
+        <!-- Product Info -->
+        <div id="product-info" class="md:ml-8 flex flex-col items-start">
+          <p id="product-model" class="text-lg">
+            <strong>Model:</strong> Samsung S7
+          </p>
+          <p id="product-price" class="text-lg text-blue-600 font-semibold">
+            Price: £16
+          </p>
+          <p class="mt-4 font-semibold">Some Info About Product:</p>
+          <p id="product-description" class="w-[550px] text-gray-600 text-sm mt-2">
+            Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub,
+            echo park actually green juice sriracha paleo. Brooklyn sriracha
+            semiotics, DIY coloring book mixtape craft beer sartorial hella blue
+            bottle...
+          </p>
+
+          <div class="flex mt-8 gap-4">
+            <!-- Buttons -->
+            <button
+              id="backButton"
+              class="px-6 py-2 border border-gray-600 bg-blue-600 text-white rounded hover:bg-blue-700 active:bg-blue-800 transition"
+            >
+              BACK TO PRODUCTS
+            </button>
+            <button
+              id="addToCartButton"
+              class="px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 active:bg-yellow-800 transition"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--java script codes-->
     <script src="./../build/index.js"></script>
-</body>
+  </body>
 </html>
