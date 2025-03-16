@@ -1,0 +1,12 @@
+export const describtionBox: HTMLParagraphElement  = document.querySelector("#product-description")!
+export const priceBox: HTMLParagraphElement  = document.querySelector("#product-price")!
+export const nameBox: HTMLParagraphElement  = document.querySelector("#product-name")!
+export const modelBox: HTMLSpanElement  = document.querySelector("#product-model")!
+export const imglBox: HTMLImageElement  = document.querySelector("#product-image")!
+export const block: HTMLDivElement  = document.querySelector("#block")!
+export const backButton: HTMLButtonElement  = document.querySelector("#backButton")!
+export const modalbtn: HTMLDivElement  = document.querySelector("#modalbtn")!
+export const modal: HTMLDivElement  = document.querySelector("#modal")!
+export const btnclose: HTMLDivElement  = document.querySelector("#btnclose")!
+export const table: HTMLDivElement  = document.querySelector("#table")!
+export const total: HTMLDivElement  = document.querySelector("#total")!

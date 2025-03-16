@@ -12,7 +12,7 @@
     <header
       class="bg-blue-900 text-white p-4 flex justify-between items-center"
     >
-      <h1 class="text-xl font-bold">PRODUCTS</h1>
+      <h1 class="text-xl font-bold cursor-pointer" id="backButton ">PRODUCTS</h1>
       <button
         id="cartButton"
         class="px-4 py-2 rounded border border-blue-400 flex items-center gap-2 hover:bg-blue-600 active:bg-blue-800 transition"
@@ -34,23 +34,18 @@
         <!-- Product Image -->
         <div
           id="product-image"
-          class="w-auto h-80 bg-gray-300 rounded-lg overflow-hidden"
+          class="w-auto h-80 rounded-lg overflow-hidden"
         >
-          <img
-            id="product-img"
-            src="https://samsung-shops.ru/image/cache/samsung_shops/catalog/add%20samsung/Galaxy%20S/s7edge/s7edge-silver.jpg_300_samsung_shops.webp"
-            alt="Samsung S7"
-            class="object-cover w-full h-full"
-          />
+
         </div>
 
         <!-- Product Info -->
         <div id="product-info" class="md:ml-8 flex flex-col items-start">
-          <p id="product-model" class="text-lg">
-            <strong>Model:</strong> Samsung S7
+          <p  class="text-lg">
+            <strong>Model:</strong> <span id="product-model"></span>
           </p>
           <p id="product-price" class="text-lg text-blue-600 font-semibold">
-            Price: £16
+
           </p>
           <p class="mt-4 font-semibold">Some Info About Product:</p>
           <p id="product-description" class="w-[550px] text-gray-600 text-sm mt-2">
@@ -67,12 +62,6 @@
               class="px-6 py-2 border border-gray-600 bg-blue-600 text-white rounded hover:bg-blue-700 active:bg-blue-800 transition"
             >
               BACK TO PRODUCTS
-            </button>
-            <button
-              id="addToCartButton"
-              class="px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 active:bg-yellow-800 transition"
-            >
-              ADD TO CART
             </button>
           </div>
         </div>
